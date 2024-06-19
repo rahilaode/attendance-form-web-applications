@@ -32,6 +32,7 @@ jobs:
         run: |
           sleep 20
           sudo docker ps
+          sudo docker logs attendance-form-web-applications-app-dev-1
           curl localhost:5002
           
       - name: Testing
