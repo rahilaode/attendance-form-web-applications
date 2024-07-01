@@ -46,7 +46,7 @@ jobs:
             echo "POSTGRES_PORT=$POSTGRES_PORT" >> .env
 
             # Run app
-            sudo docker compose up app-staging --build --detach
+            sudo docker compose up app-staging-1 app-staging-2 app-staging-3 --build --detach
       
       - name: Hit Endpoint
         run: |
